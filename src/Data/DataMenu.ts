@@ -15,7 +15,7 @@ export const menu: Menu = {
     Breakfast : [
         {
             name: "cornetto",
-            price: "€100",
+            price: "€1.20",
         } 
     ],
     Coffee : [
