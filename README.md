@@ -1,2 +1,1 @@
-B Zero27.
-Project folder for B Zero27 bar menù.
+B Zero27 bar menù project folder. 
