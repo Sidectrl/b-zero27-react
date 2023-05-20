@@ -1,8 +1,7 @@
 import React from 'react';
-
 import './App.css';
 import Navbar from './components/Navbar/Navbar';
-import CustomBody from './components/CustomBody/CustomBody';
+import CustomBody from './components/CustomBody/Body';
 
 function App() {
   return (

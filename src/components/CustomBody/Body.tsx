@@ -1,7 +1,10 @@
 import React from 'react'
-import './CustomBody.css'
-import CategoryButton from '../CategoryButton/CategoryButton'
+import './Body.css'
+import CategoryButton from '../CategoryButton/SectionButton'
 import { menu } from '../../Data/DataMenu'
+import cocktails from '../../images/cocktail.jpg'
+import breakfasts from '../../images/breakfast.png'
+import coffee from '../../images/coffee.png'
 
 const CustomBody = () => {
   return (
@@ -10,16 +13,19 @@ const CustomBody = () => {
       <CategoryButton
       categoryItem={menu.Cocktails}
       name='Cocktails'
+      backgroundImg={cocktails}
       />
       <hr />
       <CategoryButton
       categoryItem={menu.Breakfast}
       name='Breakfast'
+      backgroundImg={breakfasts}
       />
       <hr />
       <CategoryButton
       categoryItem={menu.Coffee}
       name='Coffee'
+      backgroundImg={coffee}
       />
       <hr />
     </div>
