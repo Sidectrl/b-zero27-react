@@ -7,7 +7,7 @@ import '../Navbar/CustomNav.css';
 function CustomNavbar() {
   return (
     <>
-      <Navbar style={{ backgroundImage: require('../../images/nav_background.jpeg')}} bg='dark' variant='dark' fixed='top' expand="lg">
+      <Navbar bg='dark' variant='dark' fixed='top' expand="lg">
         <div className='d-flex align-items-center justify-content-center'>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Brand href='#' className='d-flex align-items-center justify-content-center'><img src={logo} className="logo" alt="logo"/></Navbar.Brand>
