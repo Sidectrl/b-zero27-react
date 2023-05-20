@@ -5,7 +5,7 @@ import { menu } from '../../Data/DataMenu'
 
 const CustomBody = () => {
   return (
-    <div className='container justify-content-center align-items-center'>
+    <div className='justify-content-center align-items-center'>
       <h1 id='main-title' className='text-center'>Menù</h1>
       <CategoryButton
       categoryItem={menu.Cocktails}

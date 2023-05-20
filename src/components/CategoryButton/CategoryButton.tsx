@@ -16,17 +16,20 @@ const CategoryButton = ({ categoryItem, name }: customProps) => {
   };
 
   const buttonStyle = {
-    backgroundImage: coffee,
-    backgroundSize: 'cover',
+    backgroundImage: `url(${(categoryItem as Cocktail[]) ? '': (categoryItem as Coffee[])? coffee: ''})`,
+    backgroundSize:'cover',
     backgroundPosition: 'center',
     backgroundRepeat: 'no-repeat',
   }
 
 
   return (
-    <button className='category-button col-12' onClick={handleButtonClick}>
-      <div style={buttonStyle}>
+    <>
+      <button style={{width:"100%"}} className='category-button col-12' onClick={handleButtonClick}>
         <h1>{name}</h1>
+      </button>
+      <div style={buttonStyle}>
+
         <div className={`collapse ${isCollapsed ? '' : 'show'}`}>
           {categoryItem.map((iesim) =>
             <>
@@ -39,7 +42,7 @@ const CategoryButton = ({ categoryItem, name }: customProps) => {
           )}
         </div>
       </div>
-    </button>
+    </>
   )
 }
 
