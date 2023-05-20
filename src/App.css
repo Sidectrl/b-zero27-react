@@ -13,6 +13,8 @@
   }
 }
 
+
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -35,4 +37,27 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.navMargin{
+  margin-bottom: 30%
+}
+
+@media screen and (min-width: 768px) {
+  .navMargin{
+    margin-bottom: 15%
+  }
+  
+}
+@media screen and (min-width: 1024px) {
+  .navMargin{
+    margin-bottom: 10%
+  }
+  
+}
+@media screen and (min-width: 1440px) {
+  .navMargin{
+    margin-bottom: 8%
+  }
+  
 }

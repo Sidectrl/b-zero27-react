@@ -6,7 +6,7 @@ import CustomBody from './components/CustomBody/Body';
 function App() {
   return (
     <>
-    <div style={{marginBottom: '30%'}}>
+    <div className='navMargin'>
       <Navbar/>
     </div>
     
