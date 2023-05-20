@@ -14,9 +14,25 @@ export const menu: Menu = {
 ],
     Breakfast : [
         {
-            name: "cornetto",
+            name: "Cornetto vuoto",
             price: "€1.20",
-        } 
+        },
+        {
+            name: "Cornetto cereali",
+            price: "€1.20",
+        },
+        {
+            name: "Cornetto nutella",
+            price: "€1.20",
+        },
+        {
+            name: "Cornetto crema",
+            price: "€1.20",
+        },
+        {
+            name: "Cornetto marmellata",
+            price: "€1.20",
+        },
     ],
     Coffee : [
         {
