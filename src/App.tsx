@@ -5,13 +5,13 @@ import CustomBody from './components/CustomBody/Body';
 
 function App() {
   return (
-    <>
-    <div className='navMargin'>
-      <Navbar/>
+    <div id='colors'>
+      <div className='navMargin'>
+        <Navbar />
+      </div>
+
+      <CustomBody />
     </div>
-    
-    <CustomBody />
-    </>
   );
 }
 

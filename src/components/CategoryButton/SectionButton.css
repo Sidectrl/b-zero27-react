@@ -2,7 +2,8 @@ h1 {
     font-size: x-large;
 }
 
-.category-button {
-    background-color:white; 
+.section-button {
+    background-color:#03001C; 
     border-style: none;
+    color: #f4b52b;
 }

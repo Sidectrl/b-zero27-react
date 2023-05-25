@@ -40,7 +40,12 @@
 }
 
 .navMargin{
-  margin-bottom: 30%
+  margin-bottom: 10%
+}
+
+#colors{
+  color: #f4b52b;
+  background-color: #03001C;
 }
 
 @media screen and (min-width: 768px) {

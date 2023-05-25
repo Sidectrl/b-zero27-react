@@ -1,31 +1,32 @@
 import React from 'react'
 import './Body.css'
-import CategoryButton from '../CategoryButton/SectionButton'
+import SectionButton from '../CategoryButton/SectionButton'
 import { menu } from '../../Data/DataMenu'
-import cocktails from '../../images/cocktail.jpg'
+/*import cocktails from '../../images/cocktail.jpg'
 import breakfasts from '../../images/breakfast.png'
-import coffee from '../../images/coffee.png'
+import coffee from '../../images/coffee.png'*/
 
 const CustomBody = () => {
   return (
-    <div className='justify-content-center align-items-center'>
+    <div id='myBody' className='justify-content-center align-items-center'>
       <h1 id='main-title' className='text-center'>Menù</h1>
-      <CategoryButton
+      <hr />
+      <SectionButton
       categoryItem={menu.Cocktails}
       name='Cocktails'
-      backgroundImg={cocktails}
+      //backgroundImg={cocktails}
       />
       <hr />
-      <CategoryButton
+      <SectionButton
       categoryItem={menu.Breakfast}
       name='Breakfast'
-      backgroundImg={breakfasts}
+      //backgroundImg={breakfasts}
       />
       <hr />
-      <CategoryButton
+      <SectionButton
       categoryItem={menu.Coffee}
       name='Coffee'
-      backgroundImg={coffee}
+      //backgroundImg={coffee}
       />
       <hr />
     </div>

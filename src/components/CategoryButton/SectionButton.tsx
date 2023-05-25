@@ -5,25 +5,25 @@ import { Breakfast, Cocktail, Coffee } from '../../models/menu';
 type customProps = {
   categoryItem: (Cocktail | Breakfast | Coffee)[]
   name: string
-  backgroundImg: string
+  backgroundImg?: string
 }
 
-const SectionButton = ({ categoryItem, name, backgroundImg }: customProps) => {
+const SectionButton = ({ categoryItem, name }: customProps) => {
   const [isCollapsed, setIsCollapsed] = useState(true);
   const handleButtonClick = () => {
     setIsCollapsed(!isCollapsed);
   };
   const background = {
-    backgroundImage: `url(${backgroundImg})`,
+    //backgroundImage: `url(${backgroundImg})`,
     backgroundSize:'cover',
     backgroundPosition: 'center',
     backgroundRepeat: 'no-repeat',
-    textShadow: '1px 1px 0 white, -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white'
+    //textShadow: '1px 1px 0 white, -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white'
   }
 
   return (
     <>
-      <button style={{width:"100%"}} className='category-button col-12' onClick={handleButtonClick}>
+      <button style={{width:"100%"}} className='section-button col-12' onClick={handleButtonClick}>
         <h1>{name}</h1>
       </button>
       <div style={background}>
