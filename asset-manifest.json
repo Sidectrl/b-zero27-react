@@ -1,17 +1,14 @@
 {
   "files": {
-    "main.css": "/b-zero27-react/static/css/main.7b753e87.css",
-    "main.js": "/b-zero27-react/static/js/main.ba2b6ed6.js",
-    "static/media/coffee.png": "/b-zero27-react/static/media/coffee.7a8f4a9e529c93fa14f4.png",
-    "static/media/breakfast.png": "/b-zero27-react/static/media/breakfast.49d8ee6b29c6aeb3ec8e.png",
-    "static/media/cocktail.jpg": "/b-zero27-react/static/media/cocktail.4c569636d7c04181d6ed.jpg",
-    "static/media/logo.svg": "/b-zero27-react/static/media/logo.2636dc9ceddbe5e8c6eddebc26b901db.svg",
+    "main.css": "/b-zero27-react/static/css/main.c4376d32.css",
+    "main.js": "/b-zero27-react/static/js/main.a38930d1.js",
+    "static/media/logoTop.png": "/b-zero27-react/static/media/logoTop.35720f39e786751bde8a.png",
     "index.html": "/b-zero27-react/index.html",
-    "main.7b753e87.css.map": "/b-zero27-react/static/css/main.7b753e87.css.map",
-    "main.ba2b6ed6.js.map": "/b-zero27-react/static/js/main.ba2b6ed6.js.map"
+    "main.c4376d32.css.map": "/b-zero27-react/static/css/main.c4376d32.css.map",
+    "main.a38930d1.js.map": "/b-zero27-react/static/js/main.a38930d1.js.map"
   },
   "entrypoints": [
-    "static/css/main.7b753e87.css",
-    "static/js/main.ba2b6ed6.js"
+    "static/css/main.c4376d32.css",
+    "static/js/main.a38930d1.js"
   ]
 }
