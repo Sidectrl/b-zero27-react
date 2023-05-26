@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Body.css'
 import SectionButton from '../CategoryButton/SectionButton'
 import { menu } from '../../Data/DataMenu'
@@ -7,8 +7,9 @@ import breakfasts from '../../images/breakfast.png'
 import coffee from '../../images/coffee.png'*/
 
 const CustomBody = () => {
+  const [filterText, setFilterText] = useState('');
 
-  const compareProducts = (a:any, b:any) => {
+  const compareProducts = (a: any, b: any) => {
     if (a.price < b.price) {
       return -1; // a viene prima di b
     } else if (a.price > b.price) {
@@ -22,85 +23,90 @@ const CustomBody = () => {
   return (
     <div id='myBody' className='justify-content-center align-items-center'>
       <h1 id='main-title' className='text-center'>Menù</h1>
-      <hr />
-      <SectionButton
-      categoryItem={menu.Coffee.sort(compareProducts)}
-      name='Caffetteria'
-      //backgroundImg={coffee}
-      />
-      <hr />
-      <SectionButton
-      categoryItem={menu.Breakfast.sort(compareProducts)}
-      name='Colazione'
-      //backgroundImg={breakfasts}
-      />
-      <hr />
-      <SectionButton
-      categoryItem={menu.Slushes.sort(compareProducts)}
-      name='Granite'
-      //backgroundImg={breakfasts}
-      />
-      <hr />
-      <SectionButton
-      categoryItem={menu.HotTables.sort(compareProducts)}
-      name='Tavola calda'
-      //backgroundImg={breakfasts}
-      />
-      <hr />
-      <SectionButton
-      categoryItem={menu.LunchBreak.sort(compareProducts)}
-      name='Pausa pranzo'
-      //backgroundImg={breakfasts}
-      />
-      <hr />
-      <SectionButton
-      categoryItem={menu.Appetizers.sort(compareProducts)}
-      name='Aperitivi'
-      //backgroundImg={breakfasts}
-      />
-      <hr />
-      <SectionButton
-      categoryItem={menu.Syrups.sort(compareProducts)}
-      name='Sciroppi'
-      //backgroundImg={breakfasts}
-      />
-      <hr />
-      <SectionButton
-      categoryItem={menu.MilkShakes.sort(compareProducts)}
-      name='Frappè'
-      //backgroundImg={breakfasts}
-      />
-      <hr />
-      <SectionButton
-      categoryItem={menu.Sweets.sort(compareProducts)}
-      name='Dolci'
-      //backgroundImg={breakfasts}
-      />
-      <hr />
-      <SectionButton
-      categoryItem={menu.Fruits.sort(compareProducts)}
-      name='Frutta'
-      //backgroundImg={breakfasts}
-      />
-      <hr />
-      <SectionButton
-      categoryItem={menu.Drinks.sort(compareProducts)}
-      name='Bevande'
-      //backgroundImg={breakfasts}
-      />
-      <hr />
-      <SectionButton
-      categoryItem={menu.Beers.sort(compareProducts)}
-      name='Birre'
-      //backgroundImg={breakfasts}
-      />
-      <hr />
-      <SectionButton
-      categoryItem={menu.Bitters.sort(compareProducts)}
-      name='Amari'
-      //backgroundImg={breakfasts}
-      />
-      <hr />      
+      <div className='d-flex justify-content-center align-items-center'>
+        <input className='filterInput' type="text" placeholder='Cerca' value={filterText} onChange={(event) => setFilterText(event.target.value)} />
+      </div>
+      <div>
+        
+        <SectionButton
+          categoryItem={menu.Coffee.filter(item => item.name.toLowerCase().includes(filterText.toLowerCase())).sort(compareProducts)}
+          name='Caffetteria'
+        //backgroundImg={coffee}
+        />
+        
+        <SectionButton
+          categoryItem={menu.Breakfast.filter(item => item.name.toLowerCase().includes(filterText.toLowerCase())).sort(compareProducts)}
+          name='Colazione'
+        //backgroundImg={breakfasts}
+        />
+        
+        <SectionButton
+          categoryItem={menu.Slushes.filter(item => item.name.toLowerCase().includes(filterText.toLowerCase())).sort(compareProducts)}
+          name='Granite'
+        //backgroundImg={breakfasts}
+        />
+        
+        <SectionButton
+          categoryItem={menu.HotTables.filter(item => item.name.toLowerCase().includes(filterText.toLowerCase())).sort(compareProducts)}
+          name='Tavola calda'
+        //backgroundImg={breakfasts}
+        />
+        
+        <SectionButton
+          categoryItem={menu.LunchBreak.filter(item => item.name.toLowerCase().includes(filterText.toLowerCase())).sort(compareProducts)}
+          name='Pausa pranzo'
+        //backgroundImg={breakfasts}
+        />
+        
+        <SectionButton
+          categoryItem={menu.Appetizers.filter(item => item.name.toLowerCase().includes(filterText.toLowerCase())).sort(compareProducts)}
+          name='Aperitivi'
+        //backgroundImg={breakfasts}
+        />
+        
+        <SectionButton
+          categoryItem={menu.Syrups.filter(item => item.name.toLowerCase().includes(filterText.toLowerCase())).sort(compareProducts)}
+          name='Sciroppi'
+        //backgroundImg={breakfasts}
+        />
+        
+        <SectionButton
+          categoryItem={menu.MilkShakes.filter(item => item.name.toLowerCase().includes(filterText.toLowerCase())).sort(compareProducts)}
+          name='Frappè'
+        //backgroundImg={breakfasts}
+        />
+        
+        <SectionButton
+          categoryItem={menu.Sweets.filter(item => item.name.toLowerCase().includes(filterText.toLowerCase())).sort(compareProducts)}
+          name='Dolci'
+        //backgroundImg={breakfasts}
+        />
+        
+        <SectionButton
+          categoryItem={menu.Fruits.filter(item => item.name.toLowerCase().includes(filterText.toLowerCase())).sort(compareProducts)}
+          name='Frutta'
+        //backgroundImg={breakfasts}
+        />
+        
+        <SectionButton
+          categoryItem={menu.Drinks.filter(item => item.name.toLowerCase().includes(filterText.toLowerCase())).sort(compareProducts)}
+          name='Bevande'
+        //backgroundImg={breakfasts}
+        />
+        
+        <SectionButton
+          categoryItem={menu.Beers.filter(item => item.name.toLowerCase().includes(filterText.toLowerCase())).sort(compareProducts)}
+          name='Birre'
+        //backgroundImg={breakfasts}
+        />
+        
+        <SectionButton
+          categoryItem={menu.Bitters.filter(item => item.name.toLowerCase().includes(filterText.toLowerCase())).sort(compareProducts)}
+          name='Amari'
+        //backgroundImg={breakfasts}
+        />
+        <hr />
+      </div>
     </div>
   )
 }

@@ -1,5 +1,10 @@
-#main-title{
+#main-title {
     font-size: xxx-large;
-    
+
 }
 
+.filterInput {
+    background-color: '';
+    color: '';
+    width: calc(100% - 2%);
+}
