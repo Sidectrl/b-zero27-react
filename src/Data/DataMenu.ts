@@ -64,13 +64,14 @@ export const menu: Menu = {
             price: "€2.00"
         },
         {
-            name: "Orzo piccolo",
-            price: "€1.50"
+            name: "Orzo",
+            price: "€1.50",
+            ingredients: "Grande €1.80"
         },
-        {
-            name: "Orzo grande",
-            price: "€1.80"
-        },
+        // {
+        //     name: "Orzo grande",
+        //     price: "€1.80"
+        // },
         {
             name: "Caffè ginseng",
             price: "€1.50",
@@ -109,7 +110,7 @@ export const menu: Menu = {
             price: "€1.50",
         },
         {
-            name: "Colazione minion",
+            name: "Colazione mignon",
             price: "€0.80",
         },
         {
