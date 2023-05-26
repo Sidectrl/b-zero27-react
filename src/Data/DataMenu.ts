@@ -64,7 +64,7 @@ export const menu: Menu = {
             price: "€2.00"
         },
         {
-            name: "Orzo",
+            name: "Orzo piccolo",
             price: "€1.50",
             ingredients: "Grande €1.80"
         },
