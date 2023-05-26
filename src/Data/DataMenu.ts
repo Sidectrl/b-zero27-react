@@ -19,8 +19,9 @@ export const menu: Menu = {
             price: "€2.00"
         },
         {
-            name: "Caffè macchiato (zimil / valsoia)",
-            price: "€1.80"
+            name: "Caffè macchiato",
+            price: "€1.80",
+            ingredients: "Zymil o valsoia"
         },
         {
             name: "Caffè corretto",
@@ -31,7 +32,7 @@ export const menu: Menu = {
             price: "€1.50"
         },
         {
-            name: "Caffè co panna",
+            name: "Caffè con panna",
             price: "€1.50"
         },
         {
@@ -72,12 +73,13 @@ export const menu: Menu = {
         },
         {
             name: "Caffè ginseng",
-            price: "€1.50"
+            price: "€1.50",
+            ingredients: "Grande €1.80"
         },
-        {
-            name: "Caffè ginseng grande",
-            price: "€1.80"
-        },
+        // {
+        //     name: "Caffè ginseng grande",
+        //     price: "€1.80"
+        // },
         {
             name: "Tisane",
             price: "€2.50"
@@ -99,139 +101,328 @@ export const menu: Menu = {
 
     Breakfast: [
         {
-            name: "Cornetto vuoto",
+            name: "Colazione",
             price: "€1.20",
         },
         {
-            name: "Cornetto cereali",
-            price: "€1.20",
+            name: "Colazione al pistacchio",
+            price: "€1.50",
         },
         {
-            name: "Cornetto nutella",
-            price: "€1.20",
+            name: "Colazione minion",
+            price: "€0.80",
         },
         {
-            name: "Cornetto crema",
-            price: "€1.20",
+            name: "Raviola ricotta",
+            price: "€1.80",
         },
         {
-            name: "Cornetto marmellata",
-            price: "€1.20",
+            name: "Brioche col tuppo",
+            price: "€1.00",
+        },
+        {
+            name: "Brioche col tuppo senza glutine",
+            price: "€2.50",
+        },
+        {
+            name: "Brioche con nutella",
+            price: "€2.00",
         },
     ],
 
-    Slushes: [{
-        name: "Gin Tonic",
-        price: "€5.00",
-        ingredients: "Gin, acqua tonica"
-    },
-    {
-        name: "Gin Lemon",
-        price: "€5.00",
-        ingredients: "Gin, Lemon soda"
-    }
+    Slushes: [
+        {
+            name: "Cioccolato",
+            price: "€2.00",
+        },
+        {
+            name: "Mandorla",
+            price: "€2.00",
+        },
+        {
+            name: "Pistacchio",
+            price: "€2.00",
+        },
+        {
+            name: "Caffè",
+            price: "€2.00",
+        },
+        {
+            name: "Limone",
+            price: "€2.00",
+        },
+        {
+            name: "Fragola",
+            price: "€2.00",
+        },
+        {
+            name: "Gelsi",
+            price: "€2.00",
+            ingredients: "Stagione"
+        },
+
     ],
 
-    TavolaCalda: [{
-        name: "Gin Tonic",
-        price: "€5.00",
-        ingredients: "Gin, acqua tonica"
-    },
-    {
-        name: "Gin Lemon",
-        price: "€5.00",
-        ingredients: "Gin, Lemon soda"
-    }
+    TavolaCalda: [
+        {
+            name: "Classica",
+            price: "€1.50",
+        },
+        {
+            name: "Senza glutine",
+            price: "€2.50",
+        },
     ],
 
     LunchBreak: [{
-        name: "Gin Tonic",
-        price: "€5.00",
-        ingredients: "Gin, acqua tonica"
+        name: "Insalatona",
+        price: "€3.00",
+        ingredients: "supp. €0.50"
     },
     {
-        name: "Gin Lemon",
-        price: "€5.00",
-        ingredients: "Gin, Lemon soda"
-    }
+        name: "Chicken Garden",
+        price: "€4.50",
+        ingredients: "Insalata mista con straccetti di pollo arrosto"
+    },
+    {
+        name: "Insalata di riso",
+        price: "€3.50",
+    },
+    {
+        name: "Insalata fantasy",
+        price: "€4.50",
+        ingredients: "Base insalata mista, cond. variabile"
+    },
+    {
+        name: "Piadina prosciutto e formaggio",
+        price: "€3.00",
+    },
+    {
+        name: "Piadina tonno e philadelphia",
+        price: "€3.50",
+    },
+    {
+        name: "Piadina caprese",
+        price: "€3.50",
+        ingredients: "Pomodoro, mozzarella, olio sale e origano"
+    },
+    {
+        name: "Carne alla piastra",
+        price: "su richiesta",
+    },
+
     ],
-    
+
     Appetizers: [{
-        name: "Gin Tonic",
-        price: "€5.00",
-        ingredients: "Gin, acqua tonica"
+        name: "Imbottigliato",
+        price: "€3.00",
     },
     {
-        name: "Gin Lemon",
+        name: "Cocktail Analcolico",
+        price: "€4.00",
+    },
+    {
+        name: "Cocktail Alcolico",
         price: "€5.00",
-        ingredients: "Gin, Lemon soda"
+    },
+    {
+        name: "Calice di vino",
+        price: "€4.00",
+        ingredients: "Rosso o bianco"
+    },
+    {
+        name: "Prosecco maschio 20cl",
+        price: "€4.00",
     }
     ],
 
     Syrups: [{
-        name: "",
-        price: "",
+        name: "Seltz limone e sale",
+        price: "€1.00",
+    },
+    {
+        name: "Sciroppo",
+        price: "€1,20",
+    },
+    {
+        name: "Sciroppo bigusto",
+        price: "€1,50",
+    },
+    {
+        name: "Sciroppo redbull",
+        price: "€3.00",
+    },
+    {
+        name: "Sciroppo corretto",
+        price: "€3.00",
     },
     ],
+
     MilkShakes: [{
-        name: "Gin Tonic",
-        price: "€5.00",
-        ingredients: "Gin, acqua tonica"
+        name: "Nutella",
+        price: "€4.50",
+    },
+    {
+        name: "Arachidi",
+        price: "€4.50",
+    },
+    {
+        name: "Caramello",
+        price: "€4.50",
+    },
+    {
+        name: "Pistacchio",
+        price: "€6.00",
+    },
+    {
+        name: "Banana",
+        price: "€4.00",
+    },
+    {
+        name: "Amarena",
+        price: "€4.00",
+    },
+    {
+        name: "Fragola",
+        price: "€4.50",
+    },
+    {
+        name: "Food Porn",
+        price: "€6.50",
     },
     ],
 
     Sweets: [{
-        name: "Gin Tonic",
-        price: "€5.00",
-        ingredients: "Gin, acqua tonica"
+        name: "Donut*",
+        price: "€1.50",
+        ingredients: "Cioccolato, fragola, limone, vaniglia"
     },
+    {
+        name: "Occhio di bue",
+        price: "€2.00",
+        ingredients: "Nutella, nutella bianca, nocciola, pistacchio, marmellata"
+    },
+    {
+        name: "Fetta di crostata",
+        price: "€2.00",
+    },
+    {
+        name: "Crepes nutella",
+        price: "€4.00",
+    },
+    {
+        name: "Crepes nutella al pistacchio",
+        price: "€5.00",
+    }
     ],
 
     Fruits: [{
-        name: "Gin Tonic",
-        price: "€5.00",
-        ingredients: "Gin, acqua tonica"
+        name: "Misti frutta",
+        price: "€6.00",
     },
     {
-        name: "Gin Lemon",
-        price: "€5.00",
-        ingredients: "Gin, Lemon soda"
-    }
+        name: "Frullati",
+        price: "€3.00",
+        ingredients: "(2 frutti, supp: €0.50)"
+    },
+    {
+        name: "Succo di frutta",
+        price: "€2.00",
+    },
+    {
+        name: "Spremuta d'arancia",
+        price: "€2.50",
+    },
     ],
 
     Drinks: [{
-        name: "Gin Tonic",
-        price: "€5.00",
-        ingredients: "Gin, acqua tonica"
+        name: "Acqua naturale/frizzante 0.50l",
+        price: "€0.50",
     },
     {
-        name: "Gin Lemon",
-        price: "€5.00",
-        ingredients: "Gin, Lemon soda"
-    }
+        name: "Acqua naturale/frizzante 1l",
+        price: "€1.50",
+    },
+    {
+        name: "Coca cola lattina 33cl",
+        price: "€1.00",
+    },
+    {
+        name: "Coca cola zero lattina 33cl",
+        price: "€1.00",
+    },
+    {
+        name: "Coca cola bottiglia 50cl",
+        price: "€1.50",
+    },
+    {
+        name: "Coca cola bottiglia 1.5l",
+        price: "€2.00",
+    },
+    {
+        name: "Fanta lattina 33cl",
+        price: "€1.00",
+    },
+    {
+        name: "Sprite lattina 33cl",
+        price: "€1.00",
+    },
+    {
+        name: "Chinotto lattina 33cl",
+        price: "€1.00",
+    },
+    {
+        name: "Lemon soda 33cl",
+        price: "€1.50",
+    },
+    {
+        name: "Redbull",
+        price: "€2.50",
+    },
+    {
+        name: "Tè in lattina 33cl",
+        price: "€1.00",
+        ingredients: "Pesca o limone"
+    },
     ],
 
     Beers: [{
-        name: "Gin Tonic",
-        price: "€5.00",
-        ingredients: "Gin, acqua tonica"
+        name: "Peroni",
+        price: "€1.00",
     },
     {
-        name: "Gin Lemon",
-        price: "€5.00",
-        ingredients: "Gin, Lemon soda"
-    }
+        name: "Moretti",
+        price: "€1.00",
+    },
+    {
+        name: "Ceres",
+        price: "€2.50",
+    },
+    {
+        name: "Dreher limone",
+        price: "€2.00",
+    },
+    {
+        name: "Messina cristalli di sale",
+        price: "€2.50",
+    },
+    {
+        name: "Tennent's",
+        price: "€2.50",
+    },
+    {
+        name: "Corona",
+        price: "€3.00",
+    },
     ],
 
     Bitters: [{
-        name: "Gin Tonic",
-        price: "€5.00",
-        ingredients: "Gin, acqua tonica"
+        name: "Mezz'amaro",
+        price: "€2.00",
     },
     {
-        name: "Gin Lemon",
-        price: "€5.00",
-        ingredients: "Gin, Lemon soda"
+        name: "Intero",
+        price: "€2.50",
     }
     ],
 }

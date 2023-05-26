@@ -7,12 +7,24 @@ import breakfasts from '../../images/breakfast.png'
 import coffee from '../../images/coffee.png'*/
 
 const CustomBody = () => {
+
+  const compareProducts = (a:any, b:any) => {
+    if (a.price < b.price) {
+      return -1; // a viene prima di b
+    } else if (a.price > b.price) {
+      return 1; // a viene dopo b
+    } else {
+      // Se i prezzi sono uguali, ordina in base al nome
+      return a.name.localeCompare(b.name);
+    }
+  };
+
   return (
     <div id='myBody' className='justify-content-center align-items-center'>
       <h1 id='main-title' className='text-center'>Menù</h1>
       <hr />
       <SectionButton
-      categoryItem={menu.Coffee}
+      categoryItem={menu.Coffee.sort(compareProducts)}
       name='Caffetteria'
       //backgroundImg={coffee}
       />
