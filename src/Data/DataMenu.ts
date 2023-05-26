@@ -163,7 +163,7 @@ export const menu: Menu = {
 
     ],
 
-    TavolaCalda: [
+    HotTables: [
         {
             name: "Classica",
             price: "€1.50",

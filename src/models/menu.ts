@@ -2,7 +2,7 @@ export type Menu = {
     Coffee: Template[]
     Breakfast: Template[]
     Slushes: Template[]
-    TavolaCalda: Template[]
+    HotTables: Template[]
     LunchBreak: Template[]
     Appetizers: Template[]
     Syrups: Template[]

@@ -30,19 +30,77 @@ const CustomBody = () => {
       />
       <hr />
       <SectionButton
-      categoryItem={menu.Breakfast}
+      categoryItem={menu.Breakfast.sort(compareProducts)}
       name='Colazione'
       //backgroundImg={breakfasts}
       />
       <hr />
       <SectionButton
-      categoryItem={menu.Drinks}
-      name='Aperitivi'
-      //backgroundImg={cocktails}
+      categoryItem={menu.Slushes.sort(compareProducts)}
+      name='Granite'
+      //backgroundImg={breakfasts}
       />
       <hr />
-      
-      
+      <SectionButton
+      categoryItem={menu.HotTables.sort(compareProducts)}
+      name='Tavola calda'
+      //backgroundImg={breakfasts}
+      />
+      <hr />
+      <SectionButton
+      categoryItem={menu.LunchBreak.sort(compareProducts)}
+      name='Pausa pranzo'
+      //backgroundImg={breakfasts}
+      />
+      <hr />
+      <SectionButton
+      categoryItem={menu.Appetizers.sort(compareProducts)}
+      name='Aperitivi'
+      //backgroundImg={breakfasts}
+      />
+      <hr />
+      <SectionButton
+      categoryItem={menu.Syrups.sort(compareProducts)}
+      name='Sciroppi'
+      //backgroundImg={breakfasts}
+      />
+      <hr />
+      <SectionButton
+      categoryItem={menu.MilkShakes.sort(compareProducts)}
+      name='Frappè'
+      //backgroundImg={breakfasts}
+      />
+      <hr />
+      <SectionButton
+      categoryItem={menu.Sweets.sort(compareProducts)}
+      name='Dolci'
+      //backgroundImg={breakfasts}
+      />
+      <hr />
+      <SectionButton
+      categoryItem={menu.Fruits.sort(compareProducts)}
+      name='Frutta'
+      //backgroundImg={breakfasts}
+      />
+      <hr />
+      <SectionButton
+      categoryItem={menu.Drinks.sort(compareProducts)}
+      name='Bevande'
+      //backgroundImg={breakfasts}
+      />
+      <hr />
+      <SectionButton
+      categoryItem={menu.Beers.sort(compareProducts)}
+      name='Birre'
+      //backgroundImg={breakfasts}
+      />
+      <hr />
+      <SectionButton
+      categoryItem={menu.Bitters.sort(compareProducts)}
+      name='Amari'
+      //backgroundImg={breakfasts}
+      />
+      <hr />      
     </div>
   )
 }
