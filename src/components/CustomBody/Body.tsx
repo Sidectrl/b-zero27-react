@@ -2,9 +2,6 @@ import React, { useState } from 'react'
 import './Body.css'
 import SectionButton from '../CategoryButton/SectionButton'
 import { menu } from '../../Data/DataMenu'
-/*import cocktails from '../../images/cocktail.jpg'
-import breakfasts from '../../images/breakfast.png'
-import coffee from '../../images/coffee.png'*/
 
 const CustomBody = () => {
   const [filterText, setFilterText] = useState('');
