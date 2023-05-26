@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import './SectionButton.css'
-import { Breakfast, Cocktail, Coffee } from '../../models/menu';
+import { Template } from '../../models/menu';
+
 
 type customProps = {
-  categoryItem: (Cocktail | Breakfast | Coffee)[]
+  categoryItem: (Template)[]
   name: string
   backgroundImg?: string
 }
@@ -28,14 +29,14 @@ const SectionButton = ({ categoryItem, name }: customProps) => {
       </button>
       <div style={background}>
         {}
-        <div className={`collapse ${isCollapsed ? '' : 'show'}`}>
+        <div style={{padding: 12}} className={`collapse ${isCollapsed ? '' : 'show'}`}>
           {categoryItem.map((iesim) =>
             <>
               <div className='d-flex justify-content-between align-items-center'>
                 <h4>{iesim.name}</h4>
                 <h4>{iesim.price}</h4>
               </div>
-              <p className='text-start fst-italic'>{(iesim as Cocktail)?.ingredients} </p>
+              {iesim.ingredients ? <p style={{marginTop:0, paddingTop: 0}} className='text-start fst-italic'>{iesim.ingredients} </p>: ''}
             </>
           )}
         </div>

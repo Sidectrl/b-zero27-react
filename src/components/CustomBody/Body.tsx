@@ -12,23 +12,25 @@ const CustomBody = () => {
       <h1 id='main-title' className='text-center'>Menù</h1>
       <hr />
       <SectionButton
-      categoryItem={menu.Cocktails}
-      name='Cocktails'
-      //backgroundImg={cocktails}
+      categoryItem={menu.Coffee}
+      name='Caffetteria'
+      //backgroundImg={coffee}
       />
       <hr />
       <SectionButton
       categoryItem={menu.Breakfast}
-      name='Breakfast'
+      name='Colazione'
       //backgroundImg={breakfasts}
       />
       <hr />
       <SectionButton
-      categoryItem={menu.Coffee}
-      name='Coffee'
-      //backgroundImg={coffee}
+      categoryItem={menu.Drinks}
+      name='Aperitivi'
+      //backgroundImg={cocktails}
       />
       <hr />
+      
+      
     </div>
   )
 }
