@@ -7,10 +7,10 @@ import '../Navbar/CustomNav.css';
 function CustomNavbar() {
   return (
     <>
-      <Navbar style={{padding:0}} bg='dark' variant='dark'  expand="lg">
+      <Navbar className='d-flex justify-content-center align-items-center' style={{margin:0, padding:0, backgroundColor:'#0e0e0f'}} variant='dark'>
         {/*<div className='d-flex align-items-center justify-content-center'>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />*/}
-          <Navbar.Brand style={{display:'flex', alignItems:'center', justifyContent:'center', margin:0, padding:0}} href='#'><img src={logo} className="logo" alt="logo"/></Navbar.Brand>
+          <Navbar.Brand style={{margin:0, padding:0}} href='#'><img  src={logo} className="logo" alt="logo"/></Navbar.Brand>
         {/*</div> 
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
