@@ -40,7 +40,7 @@
 }
 
 .navMargin{
-  margin-bottom: 10%
+  margin-bottom: 8%
 }
 
 #colors{
@@ -50,19 +50,6 @@
 
 @media screen and (min-width: 768px) {
   .navMargin{
-    margin-bottom: 15%
+    margin-bottom: 0%
   }
-  
-}
-@media screen and (min-width: 1024px) {
-  .navMargin{
-    margin-bottom: 10%
-  }
-  
-}
-@media screen and (min-width: 1440px) {
-  .navMargin{
-    margin-bottom: 8%
-  }
-  
 }
