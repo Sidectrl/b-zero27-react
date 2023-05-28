@@ -17,72 +17,72 @@ export type Menu = {
 
 export type Template = {
     name: string
-    price: string
+    price?: number 
     ingredients?: string
 }
 // export type Breakfast = {
 //     name: string
-//     price: string
+//     price: number
 // }
 
 // export type Granita = {
 //     name: string
-//     price: string
+//     price: number
 // }
 
 // export type TavolaCalda= {
 //     name: string
-//     price: string
+//     price: number
 // }
 
 // export type LunchBreak={
 //     name: string
-//     price: string
+//     price: number
 //     ingredients?: string
 // }
 
 // export type Aperitif={
 //     name: string
-//     price: string
+//     price: number
 // }
 
 // export type Syrups ={
 //     name: string
-//     price: string
+//     price: number
 // }
 
 // export type MilkShake={
 //     name: string
-//     price: string
+//     price: number
 // }
 // export type Sweet={
 //     name: string
-//     price: string
+//     price: number
 //     ingredients?: string
 // }
 
 // export type Fruit={
 //     name: string
-//     price: string
+//     price: number
 //     ingredients?: string
 // }
 
 // export type Drinks={
 //     name: string
-//     price: string
+//     price: number
 // }
 
 // export type Beer={
 //     name: string
-//     price: string
+//     price: number
 // }
 // export type Bitter ={
 //     name: string
-//     price: string
+//     price: number
 // }
 // export type Cocktail = {
 //     name: string
-//     price: string
+//     price: number
 //     ingredients?: string
 // }
 

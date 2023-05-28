@@ -24,79 +24,78 @@ const CustomBody = () => {
         <input className='filterInput' type="text" placeholder='Cerca' value={filterText} onChange={(event) => setFilterText(event.target.value)} />
       </div>
       <div>
-        
         <SectionButton
           categoryItem={menu.Coffee.filter(item => item.name.toLowerCase().includes(filterText.toLowerCase())).sort(compareProducts)}
           name='Caffetteria'
         //backgroundImg={coffee}
         />
-        
+
         <SectionButton
           categoryItem={menu.Breakfast.filter(item => item.name.toLowerCase().includes(filterText.toLowerCase())).sort(compareProducts)}
           name='Colazione'
         //backgroundImg={breakfasts}
         />
-        
+
         <SectionButton
           categoryItem={menu.Slushes.filter(item => item.name.toLowerCase().includes(filterText.toLowerCase())).sort(compareProducts)}
           name='Granite'
         //backgroundImg={breakfasts}
         />
-        
+
         <SectionButton
           categoryItem={menu.HotTables.filter(item => item.name.toLowerCase().includes(filterText.toLowerCase())).sort(compareProducts)}
           name='Tavola calda'
         //backgroundImg={breakfasts}
         />
-        
+
         <SectionButton
           categoryItem={menu.LunchBreak.filter(item => item.name.toLowerCase().includes(filterText.toLowerCase())).sort(compareProducts)}
           name='Pausa pranzo'
         //backgroundImg={breakfasts}
         />
-        
+
         <SectionButton
           categoryItem={menu.Appetizers.filter(item => item.name.toLowerCase().includes(filterText.toLowerCase())).sort(compareProducts)}
           name='Aperitivi'
         //backgroundImg={breakfasts}
         />
-        
+
         <SectionButton
           categoryItem={menu.Syrups.filter(item => item.name.toLowerCase().includes(filterText.toLowerCase())).sort(compareProducts)}
           name='Sciroppi'
         //backgroundImg={breakfasts}
         />
-        
+
         <SectionButton
           categoryItem={menu.MilkShakes.filter(item => item.name.toLowerCase().includes(filterText.toLowerCase())).sort(compareProducts)}
           name='Frappè'
         //backgroundImg={breakfasts}
         />
-        
+
         <SectionButton
           categoryItem={menu.Sweets.filter(item => item.name.toLowerCase().includes(filterText.toLowerCase())).sort(compareProducts)}
           name='Dolci'
         //backgroundImg={breakfasts}
         />
-        
+
         <SectionButton
           categoryItem={menu.Fruits.filter(item => item.name.toLowerCase().includes(filterText.toLowerCase())).sort(compareProducts)}
           name='Frutta'
         //backgroundImg={breakfasts}
         />
-        
+
         <SectionButton
           categoryItem={menu.Drinks.filter(item => item.name.toLowerCase().includes(filterText.toLowerCase())).sort(compareProducts)}
           name='Bevande'
         //backgroundImg={breakfasts}
         />
-        
+
         <SectionButton
           categoryItem={menu.Beers.filter(item => item.name.toLowerCase().includes(filterText.toLowerCase())).sort(compareProducts)}
           name='Birre'
         //backgroundImg={breakfasts}
         />
-        
+
         <SectionButton
           categoryItem={menu.Bitters.filter(item => item.name.toLowerCase().includes(filterText.toLowerCase())).sort(compareProducts)}
           name='Amari'

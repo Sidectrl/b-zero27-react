@@ -24,7 +24,7 @@ const SectionButton = ({ categoryItem, name }: customProps) => {
 
   return (
     <>
-      {categoryItem.length  ? <button style={{ width: "100%" }} className='section-button col-12' onClick={handleButtonClick}>
+      {categoryItem.length ? <button style={{ width: "100%" }} className='section-button col-12' onClick={handleButtonClick}>
         <hr />
         <h1> {name}</h1>
       </button> : ''}
@@ -34,7 +34,7 @@ const SectionButton = ({ categoryItem, name }: customProps) => {
             <>
               <div className='d-flex justify-content-between align-items-center'>
                 <h4>{iesim.name}</h4>
-                <h4>{iesim.price}</h4>
+                {iesim.price && <h4>€{iesim?.price?.toFixed(2)}</h4>}
               </div>
               {iesim.ingredients ? <p style={{ marginLeft: 20 }} className='text-start fst-italic'>-{iesim.ingredients} </p> : ''}
             </>
