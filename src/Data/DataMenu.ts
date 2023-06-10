@@ -61,7 +61,7 @@ export const menu: Menu = {
         },
         {
             name: "Caffè mezzo freddo",
-            price: 2.00
+            price: 1.50
         },
         {
             name: "Orzo piccolo",
