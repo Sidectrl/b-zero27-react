@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import './Body.css'
-import SectionButton from '../CategoryButton/SectionButton'
+import SectionButton from '../SectionButton/SectionButton'
 import { menu } from '../../Data/DataMenu'
 
 const CustomBody = () => {
