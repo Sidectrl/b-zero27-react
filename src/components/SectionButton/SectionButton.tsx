@@ -36,7 +36,7 @@ const SectionButton = ({ categoryItem, name }: customProps) => {
                 <h4>{iesim.name}</h4>
                 {iesim.price && <h4>€{iesim?.price?.toFixed(2)}</h4>}
               </div>
-              {iesim.ingredients ? <p style={{ marginLeft: 20 }} className='text-start fst-italic'>-{iesim.ingredients} </p> : ''}
+              {iesim.ingredients ? <li style={{ marginLeft: 20 }} className='text-start fst-italic'>{iesim.ingredients} </li> : ''}
             </>
           )}
         </div>

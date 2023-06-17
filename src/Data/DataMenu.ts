@@ -338,7 +338,7 @@ export const menu: Menu = {
     {
         name: "Frullati",
         price: 3.00,
-        ingredients: "(2 frutti, supp: €0.50)"
+        ingredients: "2 frutti, supp: €0.50"
     },
     {
         name: "Succo di frutta",
