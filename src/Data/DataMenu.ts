@@ -4,24 +4,26 @@ export const menu: Menu = {
     Coffee: [
         {
             name: "Caffè",
-            price: 0.60
+            price: 0.80
         },
         {
             name: "Caffè macchiato",
-            price: 0.60
+            price: 0.80
         },
         {
             name: "Cappuccino",
-            price: 1.20
+            price: 1.20,
+            ingredients: "Zymil o valsoia: €1.80. Supp. Granita €2.00"
         },
+
         {
             name: "Americano",
             price: 2.00
         },
         {
-            name: "Caffè macchiato",
-            price: 1.80,
-            ingredients: "Zymil o valsoia"
+            name: "Latte macchiato",
+            price: 1.50,
+            ingredients: "Zymil o valsoia: €2.00"
         },
         {
             name: "Caffè corretto",
@@ -57,11 +59,8 @@ export const menu: Menu = {
         },
         {
             name: "Caffè freddo",
-            price: 2.00
-        },
-        {
-            name: "Caffè mezzo freddo",
-            price: 1.50
+            price: 2.00,
+            ingredients: "mezzo freddo: €1.50"
         },
         {
             name: "Orzo piccolo",
@@ -95,7 +94,7 @@ export const menu: Menu = {
         },
         {
             name: "Tè freddo artigianale",
-            ingredients: "Pesca o limone",
+            ingredients: "Pesca o limone, supp. Granita €2.00",
             price: 1.50
         },
         {
@@ -121,9 +120,10 @@ export const menu: Menu = {
         {
             name: "Colazione mignon",
             price: 0.80,
+
         },
         {
-            name: "Raviola ricotta",
+            name: "Colazione ricotta",
             price: 1.80,
         },
         {
@@ -138,9 +138,17 @@ export const menu: Menu = {
             name: "Brioche con nutella",
             price: 2.00,
         },
+        {
+            name: "Brioche con nutella al pistacchio",
+            price: 3.00,
+        },
     ],
 
     Slushes: [
+        {
+            name: "Supp. Panna",
+            price: 0.50,
+        },
         {
             name: "Cioccolato",
             price: 2.00,
@@ -177,17 +185,18 @@ export const menu: Menu = {
         {
             name: "Classica",
             price: 1.50,
+            ingredients: "Senza glutine €2.50. Medi su ordinazione €1.00"
         },
         {
-            name: "Senza glutine",
-            price: 2.50,
+            name: "Pizza a taglio",
+            price: 2.00,
         },
     ],
 
     LunchBreak: [{
         name: "Insalatona",
         price: 3.00,
-        ingredients: "supp. €0.50"
+        ingredients: "Supp. €0.50"
     },
     {
         name: "Chicken Garden",
@@ -218,13 +227,35 @@ export const menu: Menu = {
     },
     {
         name: "Carne alla piastra",
-        ingredients: "Su richiesta"
+        ingredients: "Su richiesta, prezzo SQ."
     },
-
+    {
+        name: "Lasagna al forno",
+        price: 4.00,
+        ingredients: "Su ordinazione"
+    },
+    {
+        name: "Pasta al forno",
+        price: 4.00,
+        ingredients: "Su ordinazione"
+    },
+    {
+        name: "Misto fritto",
+        price: 6.00,
+    },
+    {
+        name: "Patatine fritte",
+        price: 1.50,
+    },
+    {
+        name: "Tramezzini prosciutto e formaggio/tonno e maionese",
+        price: 1.50,
+        ingredients: "Pollo bacon e maionese: €2.00"
+    },
     ],
 
     Appetizers: [{
-        name: "Imbottigliato",
+        name: "Analcolico imbottigliato",
         price: 3.00,
     },
     {
@@ -241,9 +272,22 @@ export const menu: Menu = {
         ingredients: "Rosso o bianco"
     },
     {
-        name: "Prosecco maschio 20cl",
+        name: "Calice prosecco",
         price: 4.00,
-    }
+    },
+    {
+        name: "Supp. Correzione",
+        price: 1.50,
+    },
+    {
+        name: "Schweppes tonica/limone",
+        price: 2.00,
+        ingredients: "Supp. granita €0.50"
+    },
+    {
+        name: "Aperitivo rinforzato",
+        price: 9.00,
+    },
     ],
 
     Syrups: [{
@@ -253,6 +297,7 @@ export const menu: Menu = {
     {
         name: "Sciroppo",
         price: 1.20,
+        ingredients: "Supp. granita €0.50"
     },
     {
         name: "Sciroppo bigusto",
@@ -308,6 +353,15 @@ export const menu: Menu = {
         ingredients: "Cioccolato, fragola, limone, vaniglia"
     },
     {
+        name: "Donut ripieni*",
+        price: 2.00,
+        ingredients: "Cioccolato, fragola"
+    },
+    {
+        name: "Zucchero filato",
+        price: 1.80,
+    },
+    {
         name: "Occhio di bue",
         price: 2.00,
         ingredients: "Nutella, nutella bianca, nocciola, pistacchio, marmellata"
@@ -334,6 +388,7 @@ export const menu: Menu = {
     Fruits: [{
         name: "Misti frutta",
         price: 6.00,
+        ingredients: "Frutta cubettata, granita alla frutta e panna"
     },
     {
         name: "Frullati",
@@ -343,10 +398,15 @@ export const menu: Menu = {
     {
         name: "Succo di frutta",
         price: 2.00,
+        ingredients: "Zero €2.50"
     },
     {
         name: "Spremuta d'arancia",
         price: 2.50,
+    },
+    {
+        name: "Spremuta di pompelmo",
+        price: 3.00,
     },
     ],
 
@@ -361,6 +421,7 @@ export const menu: Menu = {
     {
         name: "Coca cola lattina 33cl",
         price: 1.00,
+        ingredients: "50cl €1.20"
     },
     {
         name: "Coca cola zero lattina 33cl",
@@ -401,10 +462,7 @@ export const menu: Menu = {
     },
     ],
 
-    Beers: [{
-        name: "Peroni",
-        price: 1.00,
-    },
+    Beers: [
     {
         name: "Moretti",
         price: 1.00,
@@ -428,6 +486,10 @@ export const menu: Menu = {
     {
         name: "Corona",
         price: 3.00,
+    },
+    {
+        name: "Heineken",
+        price: 2.50,
     },
     ],
 
