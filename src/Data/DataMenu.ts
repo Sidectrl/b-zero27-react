@@ -227,7 +227,8 @@ export const menu: Menu = {
     },
     {
         name: "Carne alla piastra",
-        ingredients: "Su richiesta, prezzo SQ."
+        ingredients: "Su richiesta",
+        typeOfPrice: "SQ."
     },
     {
         name: "Lasagna al forno",
