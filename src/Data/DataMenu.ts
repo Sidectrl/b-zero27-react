@@ -83,7 +83,7 @@ export const menu: Menu = {
         {
             name: "Latte di mandorla",
             price: 2.00,
-            ingredients: "Supp. Granita €2.00"
+            ingredients: "Supp. Granita €2.50"
         },
         {
             name: "Tè freddo artigianale",
