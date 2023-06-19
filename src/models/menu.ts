@@ -19,6 +19,7 @@ export type Template = {
     name: string
     price?: number 
     ingredients?: string
+    typeOfPrice?: string
 }
 // export type Breakfast = {
 //     name: string
