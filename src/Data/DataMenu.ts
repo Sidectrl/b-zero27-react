@@ -13,7 +13,7 @@ export const menu: Menu = {
         {
             name: "Cappuccino",
             price: 1.20,
-            ingredients: "Zymil o valsoia: €1.80. Supp. Granita €2.00"
+            ingredients: "Zymil o valsoia: €1.80"
         },
 
         {
@@ -67,19 +67,11 @@ export const menu: Menu = {
             price: 1.50,
             ingredients: "Grande €1.80"
         },
-        // {
-        //     name: "Orzo grande",
-        //     price: 1.80
-        // },
         {
             name: "Caffè ginseng",
             price: 1.50,
             ingredients: "Grande €1.80"
         },
-        // {
-        //     name: "Caffè ginseng grande",
-        //     price: 1.80
-        // },
         {
             name: "Tisane",
             price: 2.50
@@ -90,7 +82,8 @@ export const menu: Menu = {
         },
         {
             name: "Latte di mandorla",
-            price: 2.00
+            price: 2.00,
+            ingredients: "Supp. Granita €2.00"
         },
         {
             name: "Tè freddo artigianale",
@@ -228,7 +221,7 @@ export const menu: Menu = {
     {
         name: "Carne alla piastra",
         ingredients: "Su richiesta",
-        typeOfPrice: "SQ."
+        typeOfPrice: "S.Q."
     },
     {
         name: "Lasagna al forno",
