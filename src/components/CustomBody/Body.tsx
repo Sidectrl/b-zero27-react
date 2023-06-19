@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import './Body.css'
 import SectionButton from '../SectionButton/SectionButton'
 import { menu } from '../../Data/DataMenu'
+import Promo from '../Promo/Promo'
 
 const CustomBody = () => {
   const [filterText, setFilterText] = useState('');
@@ -22,6 +23,9 @@ const CustomBody = () => {
       <h1 id='main-title' className='text-center'>Menù</h1>
       <div className='d-flex justify-content-center align-items-center'>
         <input className='filterInput' type="text" placeholder='Cerca' value={filterText} onChange={(event) => setFilterText(event.target.value)} />
+      </div>
+      <div>
+        <Promo/>
       </div>
       <div>
         <SectionButton
