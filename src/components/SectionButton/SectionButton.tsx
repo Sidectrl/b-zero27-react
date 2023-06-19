@@ -34,7 +34,7 @@ const SectionButton = ({ categoryItem, name }: customProps) => {
             <>
               <div className='d-flex justify-content-between align-items-center'>
                 <h4>{iesim.name}</h4>
-                {iesim.price && <h4>€{iesim?.price?.toFixed(2)}</h4>}
+                {<h4>€{iesim?.price?.toFixed(2) || iesim.typeOfPrice}</h4>}
               </div>
               {iesim.ingredients ? <li style={{ marginLeft: 20 }} className='text-start fst-italic'>{iesim.ingredients} </li> : ''}
             </>
