@@ -290,7 +290,7 @@ export const menu: Menu = {
     },
     {
         name: "Sciroppo",
-        price: 1.20,
+        price: 1.50,
         ingredients: "Supp. granita €0.50"
     },
     {
