@@ -8,7 +8,7 @@ const Footer = () => {
             <div className="container ">
                 <div className="row">
                     <div className="col-12">
-                            <a className="social-button mx-4" href="tel:+393922718734" role="button">
+                            <a className="social-button mx-4" href="tel:+39 327 550 9899" role="button">
                                <FaPhoneAlt style={{fontSize: '25px'}}/>
                             </a>
                             <a className="social-button mx-4 w-25" href="https://www.facebook.com/profile.php?id=100088658636092" role="button" target="blank">
