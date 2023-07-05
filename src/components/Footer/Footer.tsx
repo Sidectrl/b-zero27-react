@@ -4,8 +4,9 @@ import './Footer.css';
 
 const Footer = () => {
     return (
-        <footer className="container-footer text-center py-4 justify-content-center">
-            <div className="container ">
+        <footer className="container-footer text-center mt-4">
+            <h1>Contatti</h1>
+            <div className="container py-3 ">
                 <div className="row">
                     <div className="col-12">
                             <a className="social-button mx-4" href="tel:+39 327 550 9899" role="button">
