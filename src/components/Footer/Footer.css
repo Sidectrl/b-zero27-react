@@ -1,0 +1,13 @@
+.container-footer{
+    color: #f4b52b;
+}
+.social-button{
+    color: #f4b52b;
+    text-decoration: none;
+}
+.social-button:visited{
+    color: #f1c86e;
+}
+.social-button:link{
+    color: #f1c86e;
+}
