@@ -224,14 +224,9 @@ export const menu: Menu = {
         typeOfPrice: "S.Q."
     },
     {
-        name: "Lasagna al forno",
+        name: "Primo",
         price: 4.00,
-        ingredients: "Su ordinazione"
-    },
-    {
-        name: "Pasta al forno",
-        price: 4.00,
-        ingredients: "Su ordinazione"
+        ingredients: "Secondo disponibilità"
     },
     {
         name: "Misto fritto",
