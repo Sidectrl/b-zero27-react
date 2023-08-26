@@ -454,7 +454,7 @@ export const menu: Menu = {
     Beers: [
     {
         name: "Moretti",
-        price: 1.00,
+        price: 1.20,
     },
     {
         name: "Ceres",
